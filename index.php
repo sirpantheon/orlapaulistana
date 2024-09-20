@@ -228,6 +228,7 @@
 	<!-- INÍCIO #diferenciais -->
 	<section id="diferenciais">
 		<!-- Diferenciais do projeto aqui -->
+		<?php get_template_part( 'template-parts/diferenciais' ); ?>
 	</section>
 	<!-- FIM #diferenciais -->
 

@@ -3,12 +3,12 @@
 
         <div class="contato col-12 row d-flex">
             <div class="contato-container">
-                <div class="contato-left col-6 d-flex flex-column">
+                <div class="contato-left d-flex flex-column">
                     <span>ENTRE EM CONTATO</span>
                     <h2>Seja o primeiro<br /> a conhecer o<br /><strong>Orla Paulistana.</strong> </h2>
                     <p>Agende sua visita em nosso showroom exclusivo:<br /><strong>Rua: Tabapuã, 422 | cj. 72 - Itaim</strong></p>
                 </div>
-                <div class="contato-rigth col-6 d-flex flex-column">
+                <div class="contato-rigth d-flex flex-column">
                     <span>
                         Estamos prontos para atende-los da melhor<br /> forma possivel. Escolha a canal de sua Preferencia.
                     </span>

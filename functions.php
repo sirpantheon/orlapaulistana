@@ -81,6 +81,8 @@ add_action('init', 'custom_post_type_imagens_galerias');
 add_theme_support('post-thumbnails');
 require get_template_directory() . '../custom_post_type/plantas.php';
 require get_template_directory() . '../custom_post_type/galeria.php';
+require get_template_directory() . '../custom_post_type/institucional-post-type.php';
+require get_template_directory() . '../custom_post_type/legado-post-type.php';
 
 
 

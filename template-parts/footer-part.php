@@ -1,8 +1,8 @@
 <article>
     <div class="container-footer">
-        <div class="footer col-12 row  d-flex">
+        <div class="footer row  d-flex">
 
-            <div class="logo col-12 row d-flex justify-content-center align-items-center">
+            <div class="logo row d-flex justify-content-center align-items-center">
                 <p >REALIZACAO</p>
                 <img src="<?php echo esc_url(get_template_directory_uri() . '/images/logo.png'); ?>" alt="LOGO">
 
