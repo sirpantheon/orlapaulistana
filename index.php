@@ -221,6 +221,7 @@
 	<!-- INÍCIO #video-revit5 -->
 	<section id="video-revit5">
 		<!-- Vídeo Revit 5 aqui -->
+		<?php get_template_part( 'template-parts/video-revit5' ); ?>
 	</section>
 	<!-- FIM #video-revit5 -->
 
@@ -240,6 +241,7 @@
 	<!-- INÍCIO #contato-form-lp -->
 	<section id="contato-form-lp">
 		<!-- Formulário de contato e landing page aqui -->
+		<?php get_template_part( 'template-parts/contato-form-lp' ); ?>
 	</section>
 	<!-- FIM #contato-form-lp -->
 
