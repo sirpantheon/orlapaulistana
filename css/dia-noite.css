@@ -1,0 +1,182 @@
+
+/*DIA VS NOITE*/
+/* Transição suave para todo o site */
+body {
+    transition: background-color 0.5s ease, color 0.5s ease; /* Transição suave do fundo e do texto */
+}
+
+#conteudo {
+    transition: opacity 0.5s ease; /* Transição suave do conteúdo (fade in/out) */
+}
+
+/* Modo "Dia" - Padrão */
+body.dia {
+    background-color: #ffffff; /* Fundo branco para o modo dia */
+    color: #000000; /* Texto preto para o modo dia */
+}
+
+body.dia .base-botao-dia-noite {
+    background-color: #eeeeee; /* Botão claro no modo dia */
+}
+
+body.dia .endereco {
+    color: #4b4747; /* Cor padrão do endereço no modo dia */
+}
+
+body.dia .pin {
+    background-image: url('/wp-content/themes/orlapaulistana/images/pin-dia.svg'); /* Ícone do modo dia */
+}
+
+/* Estilos Específicos para Elementos que mudam entre Dia e Noite */
+body.dia .label-noite {
+    display: none;
+}
+
+body.dia .foto-panoramica-noite{
+    display: none;
+}
+
+body.dia .logo-orla-noite{
+	display: none;
+}
+
+body.dia .google-maps a{
+	color: #fff;
+}
+
+
+body.dia .texto-banner-noite{
+	display: none;
+}
+
+body.dia .textura-panoramica_baixo {
+    background-image: url('/wp-content/themes/orlapaulistana/images/start-panoramicas/bg-footer-panoramicas-dia.svg');
+}
+
+
+
+/* FACHADA - Modo Dia */
+body.dia .foto-fachada-noite {
+    display: none;
+}
+
+body.dia .foto-fachada-dia {
+    display: block;
+}
+
+
+body.dia .base-info .info li {
+    color: #4b4747; /* Cor dos itens no modo dia */
+    border-right-color: #CCC7C2; /* Cor da linha vertical no modo dia */
+}
+
+body.dia .base-info .info li:first-child {
+    background-color: #eaeae6; /* Cor de fundo do primeiro item no modo dia */
+}
+
+body.noite .base-info .info li {
+    color: #eaeae6; /* Cor dos itens no modo noite */
+    border-right-color: #4b4747; /* Cor da linha vertical no modo noite */
+}
+
+body.noite .base-info .info li:first-child {
+    background-color: #4b4747; /* Cor de fundo do primeiro item no modo noite */
+}
+
+
+/* FACHADA - Modo Noite */
+body.noite .foto-fachada-dia {
+    display: none;
+}
+
+body.noite .foto-fachada-noite {
+    display: block;
+}
+
+
+/* INÍCIO DIA VS NOITE PARA BASE INFO */
+
+/* Modo Dia */
+body.dia .info li {
+    color: #4b4747; /* Cor para o tema dia */
+    background-color: #eaeaea; /* Fundo claro para o tema dia */
+    border-color: #ccc;
+}
+
+/* Modo Noite */
+body.noite .info li {
+    color: #eaeaea; /* Cor para o tema noite */
+    background-color: #4b4747; /* Fundo escuro para o tema noite */
+    border-color: #666;
+}
+
+/* Transições suaves entre os modos */
+.info li {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* FIM DIA VS NOITE PARA BASE INFO */
+
+
+/* Modo "Noite" */
+
+body.noite .textura-panoramica_baixo {
+    background-image: url('/wp-content/themes/orlapaulistana/images/start-panoramicas/bg-footer-panoramicas-noite.svg');
+}
+
+body.noite {
+    background-color: #1c1b1b; /* Fundo escuro para o modo noite */
+    color: #ffffff; /* Texto branco para o modo noite */
+}
+
+body.noite .base-botao-dia-noite {
+    background-color: #4b4747; /* Botão escuro no modo noite */
+}
+
+body.noite .endereco {
+    color: #eeeeee; /* Cor clara do endereço no modo noite */
+}
+
+body.noite .logo-orla-dia{
+	display: none;
+}
+
+body.noite .logo-orla-noite{
+	display: block;
+}
+
+
+body.noite .google-maps a{
+	color: #eee;
+}
+
+body.noite .pin {
+    background-image: url('/wp-content/themes/orlapaulistana/images/pin-noite.svg'); /* Ícone do modo noite */
+}
+
+/* Estilos Específicos para Elementos que mudam entre Dia e Noite */
+body.noite .label-dia {
+    display: none;
+}
+
+body.noite .label-noite{
+	display: block;
+}
+
+
+body.noite .foto-panoramica-dia {
+    display: none;
+}
+
+body.noite .texto-banner-dia{
+	display: none;
+}
+
+body.noite .texto-banner-noite{
+	display: block;
+}
+
+body.noite .foto-panoramica-noite {
+    display: block;
+}
+

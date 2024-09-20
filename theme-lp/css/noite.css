@@ -1,0 +1,258 @@
+/* noite.css */
+body {
+    background-color: #1c1b1b;
+    color: #eaeae6;
+}
+
+#breakpoint{
+	background-color: #1c1b1b;
+}
+
+
+header .top-bar {
+    border-bottom-color: #eae9e2;
+}
+
+.endereco .pin, footer .pin{
+    background-image: url(/wp-content/themes/orla-lp/images/pin-endereco-noite2.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+header .google-maps a,
+header nav a {
+    color: #a09a98; /* Cor dos links no tema noite */
+}
+
+.label-dia {
+    display: none;
+}
+
+#logo-orla {
+}
+
+.textura-panoramica_topo-dia,
+.textura-panoramica_baixo-dia {
+    display: none;
+}
+
+.textura-panoramica_topo-noite,
+.textura-panoramica_baixo-noite {
+    display: block;
+	width: 120vw;
+}
+
+.foto-panoramica-dia, .foto-panoramica-noite {
+    width: 120vw;
+    min-width: 120vw;
+}
+
+
+.foto-panoramica-dia {
+    display: none;
+}
+
+.foto-panoramica-noite {
+    display: block;
+}
+
+.texto-banner {
+  
+}
+
+.texto-banner-dia{
+	display: none;
+}
+
+footer {
+    background-color: #4b4747;
+}
+
+
+
+
+
+footer .fa-whatsapp {
+}
+
+footer .fa-envelope{
+
+}
+
+.botao-fechar-dia{
+	display: none;
+}
+
+footer .cta h3 strong {
+    color: #a09a98;
+}
+
+footer .content.line-bottom {
+    border-bottom-color: #eae9e2;
+}
+
+
+
+
+footer .fa-whatsapp {
+    color: #a09a98;
+}
+
+footer .fa-envelope {
+    color: #a09a98;
+}
+
+
+
+
+.textura-footer-dia {
+    display: none;
+}
+
+.logo-footer {
+    
+}
+
+.logo-dia{
+	display: none;
+}
+
+img.logo-footer-dia{
+	display: none;
+}
+
+
+
+/* Estilos para .intro-text */
+.intro-text h3 {
+    color: #eaeae6; /* Cor do texto para o tema dia */
+}
+
+.destaque-bairro {
+    color: #a09a98;
+}
+
+.descritivo-apto h3 strong {
+    color: #a09a98;
+}
+
+/* Estilos para .info */
+.content .intro .info li {
+    border-right-color: #CCC7C2;
+}
+
+.info li {
+    color: #eaeae6; /* Cor dos itens da lista para o tema dia */
+}
+
+.descritivo-apto li:first-child {
+    background-color: #4b4747;
+    color: #eaeae6;
+}
+
+
+
+@media all and (min-width: 1025px) {
+	.textura-footer{
+		background-image: url('/wp-content/themes/orla-lp/images/layouts/textura-footer-noite.svg');
+		background-position: top left;
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+}
+
+
+@media all and (max-width: 1024px) {
+	.textura-footer{
+		background-image: url('/wp-content/themes/orla-lp/images/layouts/textura-footer-tablet-noite.svg');
+		background-position: top left;
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+}
+
+
+@media all and (max-width: 767px) {
+	.textura-footer{
+		background-image: url('/wp-content/themes/orla-lp/images/layouts/textura-footer-mobile-noite.svg');
+		background-position: top left;
+		background-size: 100%;
+		background-repeat: no-repeat;
+		min-height: 7vw;
+	}
+	
+			#mobile-menu {
+			background: #1c1b1b;
+		}
+		
+		#botao-menu span {
+			background-color: #4b4747;
+		}
+		
+}
+		
+		
+.opcoes-menu-mobile .google-maps a{
+	color: #a09a98;
+}
+
+.opcoes-menu-mobile .opcoes a{
+	color: #a09a98;
+}
+
+.h3-dia{
+	display: none!important;
+}
+
+
+a.entre-em-contato:link, a.entre-em-contato:visited{
+	text-decoration: none;
+}
+
+a.entre-em-contatoa:hover, a.entre-em-contato:active{
+	text-decoration: underline;
+}
+
+
+#base-form .show{
+    background-color: #4b4747;
+}
+
+
+.wpcf7-select {
+	background-image: url(/wp-content/themes/orla-lp/images/layouts/seta-noite.svg)!important;
+	color: #fff!important;
+}
+
+
+.wpcf7-submit{
+	border-color: #a09a98;
+}
+
+
+
+
+
+
+
+.botao-footer a{
+    text-decoration: none!important;
+    transition: border-color 0.3s ease, color 0.3s ease, background-color 0.3s ease!important;
+	border-color: #a09a98!important;
+	 background-color: #4b4747!important;
+	 color: #eaeae6!important;
+}
+
+
+.botao-footer a:link, .botao-footer a:visited{
+	  border-color: #a09a98!important;
+    color: #eaeae6!important;
+    background-color: #4b4747!important;
+}
+
+.botao-footer a:hover, .botao-footer a:active{
+	border-color: #4b4747!important;
+    color: #4b4747!important;
+    background-color: #eaeae6!important;
+}	
+

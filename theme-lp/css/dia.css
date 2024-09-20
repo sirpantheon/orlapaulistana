@@ -1,0 +1,239 @@
+/* dia.css */
+body {
+    background-color: #fff;
+    color: #4b4747;
+}
+
+
+#breakpoint{
+	background-color: #fff;
+}
+
+.endereco .pin, footer .pin {
+    background-image: url(/wp-content/themes/orla-lp/images/pin-endereco-dia.svg);
+}
+
+header .google-maps a,
+header nav a {
+    color: #CCC7C2; /* Cor dos links no tema dia */
+}
+
+.label-noite {
+    display: none;
+}
+
+#logo-orla {
+
+}
+
+.textura-panoramica_topo-dia,
+.textura-panoramica_baixo-dia {
+    display: block;
+}
+
+.textura-panoramica_topo-noite,
+.textura-panoramica_baixo-noite {
+    display: none;
+}
+
+
+.foto-panoramica-noite {
+    display: none;
+}
+
+.texto-banner {
+   
+}
+
+.texto-banner-noite{
+	display: none;
+}
+
+footer {
+    background-color: #eaeae6;
+}
+
+footer .botao-footer a {
+    text-decoration: none;
+    transition: border-color 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+}
+
+footer .botao-footer a:link,
+footer .botao-footer a:visited {
+    border-color: #4b4747;
+    color: #4b4747;
+    background-color: #eaeae6;
+}
+
+footer .botao-footer a:hover,
+footer .botao-footer a:active {
+    border-color: #a09a98;
+    color: #eaeae6;
+    background-color: #4b4747;
+}
+
+footer .fa-whatsapp {
+    
+}
+
+.botao-fechar-noite{
+	display: none;
+}
+
+footer .cta h3 strong {
+    color: #a09a98;
+}
+
+footer .content.line-bottom {
+    border-bottom-color: #4b4747;
+}
+
+.textura-footer-noite {
+    display: none;
+}
+
+
+.foto-panoramica-dia, .foto-panoramica-noite{
+	width: 120vw;
+	min-width: 120vw;
+}
+
+
+.foto-panoramica-dia {
+    display: block;
+}
+
+
+
+.logo-noite{
+	display: none;
+}
+
+img.logo-footer-noite{
+	display: none;
+}
+
+
+/* Estilos para .intro-text */
+.intro-text h3 {
+    color: #4b4747; /* Cor do texto para o tema dia */
+}
+
+.etiqueta-status,
+.descritivo-apto h3 strong{
+    color: #CCC7C2;
+}
+
+footer .cta strong{
+}
+
+.destaque-bairro,
+footer .cta a {
+    color: #4b4747;
+}
+
+/* Estilos para .info */
+.content .intro .info li {
+    border-right-color: #CCC7C2;
+}
+
+.info li {
+    color: #4b4747; /* Cor dos itens da lista para o tema dia */
+}
+
+.descritivo-apto li:first-child {
+    background-color: #eae9e2;
+}
+
+
+
+@media all and (min-width: 1025px) {
+	.textura-footer{
+		background-image: url('/wp-content/themes/orla-lp/images/layouts/textura-footer-dia.svg');
+		background-position: top left;
+		background-size: 100%;
+		background-repeat: no-repeat;
+		min-height: 7vw;
+	}
+}
+
+
+@media all and (max-width: 1024px) {
+	.textura-footer{
+		background-image: url('/wp-content/themes/orla-lp/images/layouts/textura-footer-tablet-dia.svg');
+		background-position: top left;
+		background-size: 100%;
+		background-repeat: no-repeat;
+		min-height: 7vw;
+	}
+}
+
+@media all and (max-width: 767px) {
+	.textura-footer{
+		background-image: url('/wp-content/themes/orla-lp/images/layouts/textura-footer-mobile-dia.svg');
+		background-position: top left;
+		background-size: 100%;
+		background-repeat: no-repeat;
+		min-height: 7vw;
+	}
+	
+			#mobile-menu {
+			background: #eaeae6;
+		}
+		
+		#botao-menu span {
+			background-color: #4b4343;
+		}
+		
+		
+.opcoes-menu-mobile .google-maps a{
+	color: #ccc7c2;
+}
+
+.opcoes-menu-mobile .opcoes a{
+	color: #ccc7c2;
+}
+
+.h3-noite{
+	display: none!important;
+}
+
+
+			/*FIM MENU MOBILE*/
+		}
+
+
+
+
+}
+
+
+a.entre-em-contato:link, a.entre-em-contato:visited{
+	text-decoration: none;
+}
+
+a.entre-em-contatoa:hover, a.entre-em-contato:active{
+	text-decoration: underline;
+}
+
+
+#base-form {
+    background-color: #e9e9e5;
+}
+
+.wpcf7-select {
+	background-image: url(/wp-content/themes/orla-lp/images/layouts/seta-dia.svg);
+}
+
+.wpcf7-submit{
+	
+}
+
+footer .botao-footer a{
+	transition: border-color 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+}
+
+footer .botao-footer a:hover, a .botao-footer a:active{
+	color: #eaeae6;
+    background-color: #4b4747;
+}	
