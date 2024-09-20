@@ -1,5 +1,5 @@
 <article>
-    <div class="container">
+    <div class="container-footer">
         <div class="footer col-12 row  d-flex">
 
             <div class="logo col-12 row d-flex justify-content-center align-items-center">

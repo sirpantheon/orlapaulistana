@@ -10,7 +10,11 @@ Version: 2.0.2
 /*-------------------------
 INÍCIO COMUNS
 --------------------------*/
-
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 body {
     font-family: Montserrat, Arial, sans-serif;
     font-weight: 500;
@@ -1055,16 +1059,19 @@ CAROUSEL fim
 /*-------------------------
 contato INICIO
 --------------------------*/
-#contato-form-lp article{
+#contato-form-lp{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100vw;
+}
+#contato-form-lp article{
+    width: 80%;
+    display: flex;
 }
 .contato{
     display: flex;
     justify-content: center;
-    height: 100vh;
-    width: 80vw;
 }
 .contato-container{
     display: flex;
@@ -1117,19 +1124,43 @@ contato INICIO
 .contato-rigth button{
     display: flex;
     align-items: center;
-    padding: 26px 0;
+    height: 70px;
+    padding: 26px 10px;
     margin: 10px 0;
-    font-size: 16px;
+    font-size: 22px;
     font-weight: 700;
-    justify-content: space-around;
+    justify-content: start;
     background-color: transparent;
 }
-
+.contato-rigth button span{
+    margin-left: 15px;
+}
+.contato-rigth .whatsapp{
+    width: 22vw;
+}
+.contato-rigth .agende{
+    width: 21vw;
+}
+.contato-rigth .whatsapp span{
+    font-size: 16px;
+    font-weight: 500;
+}
+.contato-rigth .agende span{
+    font-size: 16px;
+    font-weight: 500;
+}
 /*-------------------------
 contato INICIO
 --------------------------*/
+/*-------------------------
+footer INICIO
+--------------------------*/
+
 #footer{
-    background-color: #e9e9e5;
+    background-color: #e8e9e4;
+}
+.container-footer{
+    height: 100vh;
 }
 
 .logo{
@@ -1137,7 +1168,7 @@ contato INICIO
     z-index: 40;
     height: 100px;
     margin-bottom: 35vh;
-    background-color: #e9e9e5;
+    background-color: #e8e9e4;
 }
 .logo p{
     text-align: center;
@@ -1154,7 +1185,9 @@ contato INICIO
     z-index: 30;
     text-align: center;
 }
-
+/*-------------------------
+footer fim
+--------------------------*/
 
 
 /*-------------------------
@@ -1188,4 +1221,34 @@ institucional INICIO
 
 /*-------------------------
 institucional INICIO
+--------------------------*/
+
+/*-------------------------
+video revit INICIO
+--------------------------*/
+#video-revit5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5vh 0;
+    width: 100vw;
+    height: 100vh;
+    
+}
+#video-revit5 article{
+    display: flex;
+    width: 80%;
+    height: 100vh;
+}
+.video-revit{
+    width: 100%;
+    height: 75vh;
+}
+#video-revit5 article p{
+    width: 100%;
+}
+
+
+/*-------------------------
+video revit INICIO
 --------------------------*/
