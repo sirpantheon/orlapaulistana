@@ -24,6 +24,11 @@ body {
     overflow-x: hidden;
 }
 
+ul,
+ol {
+    padding: 0 !important;
+}
+
 /*-------------------------
 FIM COMUNS
 --------------------------*/
@@ -696,6 +701,7 @@ implantacao inicio
     width: 50%;
     height: 90%;
     display: flex;
+    padding-left: 20px;
     flex-direction: column;
     justify-content: space-between;
 
@@ -746,7 +752,6 @@ implantacao inicio
 
 .implantacaolegenda .segundalegenda {
     justify-content: space-between;
-
     width: 100%;
     display: flex;
     list-style-type: none;
@@ -755,12 +760,12 @@ implantacao inicio
 .implantacaolegenda .segundalegenda li {
     display: flex;
     background-color: #CCC7C2;
-    width: 8rem;
+    width: 30%;
     height: 3rem;
-    padding-inline-start: 0px;
     list-style-position: inside;
     justify-content: center;
     align-items: center;
+    font-size: 1em;
 }
 
 .implantacaolegenda .segundalegenda li:hover {
@@ -769,7 +774,7 @@ implantacao inicio
 }
 
 .implantacaolegenda div span {
-    margin-left: 40px;
+    font-size: 2.5em;
 }
 
 .segundalegenda li:nth-child(2) {
@@ -793,8 +798,22 @@ implantacao inicio
 }
 
 .carousel-implantacao .n2-section-smartslider .fitvidsignore .n2_clear {
-
     height: 80vh;
+}
+
+@media (max-width: 1000px) {
+    .implantacaolegenda .segundalegenda li {
+        font-size: .8em;
+    }
+
+    .implantacaolegenda div span {
+        font-size: 2em;
+    }
+
+    .terceiralegenda {
+        letter-spacing: .3em;
+        font-size: .8em;
+    }
 }
 
 /*-------------------------
@@ -842,7 +861,7 @@ plantas inicio
 }
 
 .containerplantas ul li {
-    font-size: 20px;
+    font-size: 1.3em;
     font-weight: lighter;
     line-height: 1px;
     letter-spacing: 3px;
@@ -855,6 +874,7 @@ plantas inicio
 }
 
 .containerplantas h2 {
+    font-size: 1.6em;
     text-align: center;
     font-weight: 200;
     letter-spacing: 6px;
@@ -1081,7 +1101,7 @@ tour-virtual inicio
 .tour-virtual-topo h2 {
     width: 100vw;
     text-align: center;
-    font-size: 45px;
+    font-size: 2.7em;
     letter-spacing: 7px;
     font-weight: 400;
 
@@ -1170,6 +1190,17 @@ tour-virtual inicio
     object-fit: fill;
 }
 
+@media (max-width: 1000px) {
+    .tour-virtual-topo div {
+        width: 80%;
+    }
+
+    .tour-virtual-topo h2 {
+        font-size: 1.5em;
+    }
+}
+
+
 /*-------------------------
 tour-virtual FIM
 --------------------------*/
@@ -1248,7 +1279,8 @@ contato INICIO
     width: 80%;
     display: flex;
 }
-.container-contato{
+
+.container-contato {
     width: 100%;
     height: 100%;
 }
@@ -1289,7 +1321,7 @@ contato INICIO
 }
 
 .contato-left h2 {
-    font-size: 35px;
+    font-size: 2em;
     letter-spacing: 5px;
     font-weight: 400;
     color: #000000;
@@ -1314,7 +1346,7 @@ contato INICIO
 .contato-rigth span {
     font-size: 16px;
     font-weight: 400;
-   
+
 }
 
 .contato-rigth button {
@@ -1337,11 +1369,29 @@ contato INICIO
     width: 23vw;
 }
 
-.contato-rigth .whatsapp span, .contato-rigth .agende span {
+.contato-rigth .whatsapp span,
+.contato-rigth .agende span {
     font-size: 16px;
     font-weight: 700;
 }
 
+@media (max-width: 730px) {
+    .contato-left h2 {
+        font-size: 1em;
+    }
+
+    .contato-container {
+        flex-direction: column;
+    }
+
+    .contato-left,
+    .contato-rigth {
+        width: 100%;
+    }
+    .contato-rigth .whatsapp,.contato-rigth .agende{
+        width: 100%;
+    }
+}
 
 
 /*-------------------------
@@ -1358,6 +1408,7 @@ footer INICIO
 .container-footer {
     height: 50vh;
 }
+
 .footer {
     height: 100%;
     display: flex;
@@ -1397,6 +1448,13 @@ footer INICIO
     z-index: 30;
     text-align: center;
     padding: 0 !important;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 730px) {
+    .direitos {
+        font-size: 0.5rem;
+    }
 }
 
 /*-------------------------
@@ -1433,6 +1491,7 @@ institucional INICIO
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: 70vh;
 }
 
 .container-institucional-texto {
@@ -1473,7 +1532,7 @@ institucional INICIO
 }
 
 .institucional-topo h2 {
-    font-size: 40px;
+    font-size: 2.5em;
     font-weight: 200;
     letter-spacing: 5px;
 }
@@ -1490,11 +1549,74 @@ institucional INICIO
 }
 
 .institucional-conteudo p {
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .logo-institucional img {
     width: 25vw;
+}
+
+@media (max-width: 1120px) {
+    .institucional-conteudo p {
+        font-size: 0.8rem;
+    }
+
+    .institucional-topo h2 {
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 900px) {
+    .institucional-conteudo p {
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .container-institucional-texto {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .institucional-conteudo {
+        height: 50vh;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .container-institucional-texto {
+        margin-top: 1vh;
+    }
+
+    .institucional-topo {
+        height: 20vh;
+    }
+
+    .institucional-topo h2 {
+        font-size: 1.2em;
+    }
+
+    .institucional {
+        height: 40vh;
+        align-items: end;
+    }
+
+    .carousel-institucional {
+        display: none;
+    }
+
+    .logo-institucional {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .institucional-conteudo p {
+        text-align: center;
+
+    }
+
+
 }
 
 /*-------------------------
@@ -1508,7 +1630,6 @@ video revit INICIO
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5vh 0;
     width: 100vw;
     height: 100vh;
 
@@ -1516,13 +1637,20 @@ video revit INICIO
 
 #video-revit5 article {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 80%;
-    height: 100vh;
+    height: 80vh;
 }
 
 .video-revit {
     width: 100%;
-    height: 75vh;
+    height: 60vh;
+    background-color: #000000;
+}
+
+.video-texto p {
+    text-align: center;
 }
 
 #video-revit5 article p {

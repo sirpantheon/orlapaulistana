@@ -36,9 +36,8 @@
             </div>
         </div>
 
-        <?php echo do_shortcode('[smartslider3 slider="6"]'); ?>
+        <?php echo do_shortcode( '[smartslider3 slider="6"]' ) ?>
 
     </div>
 
 </article>
-<!-- <img src="<?php echo esc_url(get_template_directory_uri() . '/images/fachada.jpg'); ?>" alt="Imagem do Dia"> -->

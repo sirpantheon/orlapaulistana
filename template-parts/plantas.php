@@ -9,6 +9,4 @@
         </div>
     </div>
     <?php echo do_shortcode( '[smartslider3 slider="2"]' ) ?>
-
-
 </article>
