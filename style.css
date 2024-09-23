@@ -10,11 +10,12 @@ Version: 2.0.2
 /*-------------------------
 INÍCIO COMUNS
 --------------------------*/
-*{
+* {
     box-sizing: border-box;
-    padding: 0 ;
-    margin: 0 ;
+    padding: 0;
+    margin: 0;
 }
+
 body {
     font-family: Montserrat, Arial, sans-serif;
     font-weight: 500;
@@ -683,7 +684,12 @@ implantacao inicio
 .implantacaoimg {
     width: 50%;
     height: 100%;
+}
 
+.implantacaoimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .implantacaolegenda {
@@ -779,6 +785,16 @@ implantacao inicio
 
 .terceiralegenda li {
     line-height: 35px;
+}
+
+.carousel-implantacao {
+    width: 50vw;
+    height: 100vh;
+}
+
+.carousel-implantacao .n2-section-smartslider .fitvidsignore .n2_clear {
+
+    height: 80vh;
 }
 
 /*-------------------------
@@ -1001,155 +1017,333 @@ GALERIA INICIO
 GALERIA FIM
 --------------------------*/
 
+/*-------------------------
+tour-virtual inicio
+--------------------------*/
+#tour-virtual {
+    width: 100vw;
+    height: 200vh;
+    display: block;
+}
+
+#tour-virtual article {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#tour-virtual article .container-div {
+    display: flex;
+    width: 100vw;
+    height: 80vh;
+    padding: 0 !important;
+    margin: 0 !important;
+    justify-content: center;
+}
+
+.tour-virtual-topo {
+    height: 25vh;
+    margin-top: 25vh;
+    margin-bottom: 25vh;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn-tour {
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: transparent;
+    letter-spacing: 5px;
+}
+
+.btn-tour:hover {
+    color: #A09A98
+}
+
+.tour-virtual-topo div {
+    width: 35vw;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.tour-virtual-topo h2 strong {
+    color: #A09A98
+}
+
+.tour-virtual-topo h2 {
+    width: 100vw;
+    text-align: center;
+    font-size: 45px;
+    letter-spacing: 7px;
+    font-weight: 400;
+
+}
+
+
+.carousel-container-div {
+    margin: 0 !important;
+    position: relative;
+    max-width: 80% !important;
+    overflow: hidden;
+}
+
+.carousel {
+    width: 80%;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+.carousel-item {
+    min-width: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    display: block;
+    object-fit: fill;
+}
+
+.control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.carousel-indicators {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.dot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    width: 10vw;
+    margin: 0 5px;
+    background-color: #bbb;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: 600;
+    letter-spacing: .1rem;
+}
+
+.dot.active {
+    background-color: #4c4847;
+    color: #ffffff;
+}
+
+.img-fundo1 {
+    height: 200vh;
+    width: 100%;
+    position: absolute;
+}
+
+.img-fundo1 img {
+    bottom: 0;
+    width: 100%;
+    height: 200vh;
+    z-index: 1;
+    object-fit: fill;
+}
+
+/*-------------------------
+tour-virtual FIM
+--------------------------*/
+
 
 /*-------------------------
 CAROUSEL INICIO
 --------------------------*/
+#arquitetura-carrossel {
+    height: 80vh;
 
-.galeria-carousel-container {
-    width: 80%;
-    height: 800px;
+}
+
+#arquitetura-carrossel article {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto; /* Centraliza o carousel horizontalmente */
-  }
-.carousel-item span{
+
+}
+
+.n2-ss-slider .n2-ss-layer-content .n2-ss-layer[data-pm=normal] {
     display: flex;
-    width: 500px;
+    justify-content: center;
 }
-.carousel-item img{
+
+.n2-ss-slider .n2-ss-item-image-content {
+    width: 80%;
+    display: flex !important;
+}
+
+.n2-ss-slider .n2-ss-layer-content .n2-ss-layer[data-pm=normal] {
     display: flex;
-    height: 600px;
+    justify-content: center;
 }
 
-.gallery-container {
-    overflow-x: scroll; /* Permite o scroll horizontal */
-    white-space: nowrap; /* Impede que os itens se quebrem para a próxima linha */
-    border: 1px solid #CCC7C2; /* Borda ao redor da galeria */
-    padding: 10px;
+.n2-ss-slider .n2-ss-layer[data-sstype=row].n2-ss-stretch-layer .n2-ss-layer-row {
+    width: 80% !important;
 }
 
-/* Esconde a barra de rolagem para navegadores webkit (Chrome, Safari) */
-.gallery-container::-webkit-scrollbar {
-    display: none; /* Esconde a barra de rolagem */
+.img-fundo-carousel {
+    position: absolute;
+    z-index: -10;
+    width: 100vw;
 }
 
-.gallery-container {
-    scrollbar-width: none; /* Para Firefox */
+.img-fundo-carousel img {
+    width: 100%;
+    height: 200vh;
 }
 
-.gallery {
-    display: inline-flex; /* Faz com que os itens sejam dispostos em linha */
+.img-fundo2 {
+    position: absolute;
+    width: 100vw;
 }
 
-.gallery img {
-    height: 200px; /* Define uma altura fixa para as imagens */
-    margin-right: 10px; /* Espaço entre as imagens */
-    border-radius: 5px; /* Arredonda os cantos das imagens */
-    transition: transform 0.3s; /* Transição suave ao hover */
+.img-fundo2 img {
+    width: 100vw;
+    height: 100vh;
 }
 
-.gallery img:hover {
-    transform: scale(1.05); /* Aumenta a imagem ao passar o mouse */
-}
 /*-------------------------
 CAROUSEL fim
 --------------------------*/
 /*-------------------------
 contato INICIO
 --------------------------*/
-#contato-form-lp{
+#contato-form-lp {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
+    height: 100vh;
 }
-#contato-form-lp article{
+
+#contato-form-lp article {
     width: 80%;
     display: flex;
 }
-.contato{
-    display: flex;
-    justify-content: center;
+.container-contato{
+    width: 100%;
+    height: 100%;
 }
-.contato-container{
+
+.contato {
+    width: 100% !important;
     display: flex;
-    width: 80%;
+    justify-content: space-between;
+}
+
+.contato-container {
+    display: flex;
+    width: 100%;
     padding: 0 !important;
 }
 
-.img-background{
-    left: 0;
-    display: flex;
+.img-background {
     position: absolute;
     width: 100%;
-    height: 100%;
-    z-index: 1;
-    padding: 0 !important;
+    height: 100vh;
+    object-fit: fill;
+    z-index: -2;
 }
-.img-background img{
-    height: 100%;
-}
-.contato-left,.contato-rigth{
+
+.contato-left,
+.contato-rigth {
     z-index: 50;
-    padding-top: 30vh;
     width: 50%;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-.contato-left span{
+
+.contato-left span {
     font-size: 16px;
     font-weight: bold;
-    margin: 60px 0
 }
-.contato-left h2{
+
+.contato-left h2 {
     font-size: 35px;
     letter-spacing: 5px;
-    margin-bottom: 60px;
+    font-weight: 400;
+    color: #000000;
 }
-.contato-left h2 strong{
-    color:#A09A98
+
+.contato-left h2 strong {
+    color: #A09A98;
+    font-weight: 700;
 }
+
 .contato-left p {
     font-size: 18px;
+    margin: 0 !important;
 }
-.contato-left p strong{
-    color:#4B4747;
+
+.contato-left p strong {
+    color: #4B4747;
     font-weight: 800;
 
 }
-.contato-rigth span{
-    font-size: 16px;    
-    margin: 60px 0;
+
+.contato-rigth span {
+    font-size: 16px;
     font-weight: 400;
+   
 }
-.contato-rigth button{
+
+.contato-rigth button {
     display: flex;
     align-items: center;
     height: 70px;
     padding: 26px 10px;
-    margin: 10px 0;
     font-size: 22px;
     font-weight: 700;
     justify-content: start;
     background-color: transparent;
 }
-.contato-rigth button span{
-    margin-left: 15px;
+
+.contato-rigth .whatsapp {
+    width: 25vw;
+    margin-bottom: 3vh;
 }
-.contato-rigth .whatsapp{
-    width: 22vw;
+
+.contato-rigth .agende {
+    width: 23vw;
 }
-.contato-rigth .agende{
-    width: 21vw;
-}
-.contato-rigth .whatsapp span{
+
+.contato-rigth .whatsapp span, .contato-rigth .agende span {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 700;
 }
-.contato-rigth .agende span{
-    font-size: 16px;
-    font-weight: 500;
-}
+
+
+
 /*-------------------------
 contato INICIO
 --------------------------*/
@@ -1157,20 +1351,26 @@ contato INICIO
 footer INICIO
 --------------------------*/
 
-#footer{
+#footer {
     background-color: #e8e9e4;
 }
-.footer{
+
+.container-footer {
+    height: 50vh;
+}
+.footer {
     height: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-}
-.container-footer{
-    height: 70vh;
+    align-items: center;
+    flex-direction: column;
 }
 
-.logo{
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 100vw;
     z-index: 40;
     height: auto;
@@ -1178,24 +1378,27 @@ footer INICIO
     padding: 0 !important;
     background-color: #e8e9e4;
 }
-.logo p{
+
+.logo p {
     text-align: center;
     margin: 30px 0 !important;
     padding: 0 !important;
     font-weight: 500;
     letter-spacing: 5px;
-    color:#A09A98
+    color: #A09A98
 }
-.logo img{
+
+.logo img {
     width: 20vw;
     object-fit: contain;
 }
-.direitos{
-    margin-top: 35vh !important;
+
+.direitos {
     z-index: 30;
     text-align: center;
     padding: 0 !important;
 }
+
 /*-------------------------
 footer fim
 --------------------------*/
@@ -1204,30 +1407,94 @@ footer fim
 /*-------------------------
 institucional INICIO
 --------------------------*/
-#institucional{
+#institucional-cgr {
     display: flex;
+    height: 100vh;
     justify-content: center;
     align-items: center;
 }
 
-#institucional-cgr article{
+#institucional-cgr article {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.institucional-container{
+
+.institucional-container {
     width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
-.institucional-topo{
+
+.institucional {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.container-institucional-texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+.institucional-conteudo {
+    width: 50%;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.carousel-institucional {
+    width: 50%;
+    height: 65vh;
+}
+
+.institucional-topo {
     text-align: center;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
 }
-.logo-institucional img{
+
+.institucional-topo span {
+    font-size: 22px;
+    letter-spacing: 5px;
+    color: #cbc6c2;
+
+}
+
+.institucional-topo h2 {
+    font-size: 40px;
+    font-weight: 200;
+    letter-spacing: 5px;
+}
+
+.institucional-topo h2 strong {
+    color: #cbc6c2;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+.logo-institucional img {
     width: 200px;
     object-fit: contain;
+}
+
+.institucional-conteudo p {
+    font-size: 16px;
+}
+
+.logo-institucional img {
+    width: 25vw;
 }
 
 /*-------------------------
@@ -1237,25 +1504,28 @@ institucional INICIO
 /*-------------------------
 video revit INICIO
 --------------------------*/
-#video-revit5{
+#video-revit5 {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 5vh 0;
     width: 100vw;
     height: 100vh;
-    
+
 }
-#video-revit5 article{
+
+#video-revit5 article {
     display: flex;
     width: 80%;
     height: 100vh;
 }
-.video-revit{
+
+.video-revit {
     width: 100%;
     height: 75vh;
 }
-#video-revit5 article p{
+
+#video-revit5 article p {
     width: 100%;
 }
 

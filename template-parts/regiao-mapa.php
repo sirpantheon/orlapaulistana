@@ -1,5 +1,5 @@
 <article>
-    <div class="containermapa">
+    <!-- <div class="containermapa">
         <div class="mapouter">
             <div class="gmap_canvas">
                 <iframe
@@ -14,6 +14,7 @@
                 </iframe><br>
             </div>
         </div>
-    </div>
+    </div> -->
+
 
 </article>

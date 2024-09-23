@@ -1,5 +1,5 @@
 <article>
-    <div class="containerlegado" >
+    <div class="containerlegado">
         <div class="itemtexto">
             <h2 id="subtitulo">Legado
                 <br /> arquitetonico
@@ -35,9 +35,10 @@
                 <p>Foco Luz e Desenho</p>
             </div>
         </div>
-        <div class="imglegado">
-            <img src="<?php echo esc_url(get_template_directory_uri() . '/images/fachada.jpg'); ?>" alt="Imagem do Dia">
-        </div>
+
+        <?php echo do_shortcode('[smartslider3 slider="6"]'); ?>
+
     </div>
-    
+
 </article>
+<!-- <img src="<?php echo esc_url(get_template_directory_uri() . '/images/fachada.jpg'); ?>" alt="Imagem do Dia"> -->

@@ -1,5 +1,7 @@
 <article>
-    <div class="implantacaoimg"><img src="" /></div>
+    <div class="implantacaoimg">
+        <img src="<?php echo esc_url(get_template_directory_uri() . '/images/implantacoes.png'); ?>">
+    </div>
     <div class="implantacaolegenda">
         <div>
             

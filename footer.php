@@ -1,54 +1,39 @@
     <?php wp_footer(); ?>
     <script>
-        // plantas inicio
-        let currentSlideplantas = 0;
-        const slidesplantas = document.querySelectorAll('.carousel-slide');
-        const totalSlidesplantas = slidesplantas.length;
+        let currentSlide = 0;
 
         function showSlide(index) {
-            slidesplantas.forEach(slide => slide.classList.remove('active'));
-            currentSlideplantas = (index + totalSlidesplantas) % totalSlidesplantas;
-            slidesplantas[currentSlideplantas].classList.add('active');
+            const slides = document.querySelectorAll('.carousel-item');
+            const dots = document.querySelectorAll('.dot');
+
+            if (index >= slides.length) {
+                currentSlide = 0;
+            } else if (index < 0) {
+                currentSlide = slides.length - 1;
+            } else {
+                currentSlide = index;
+            }
+
+            slides.forEach((slide, i) => {
+                slide.style.display = (i === currentSlide) ? 'block' : 'none';
+            });
+
+            dots.forEach((dot, i) => {
+                dot.className = (i === currentSlide) ? 'dot active' : 'dot';
+            });
         }
 
-        function moveSlide(direction) {
-            showSlide(currentSlideplantas + direction);
+        function moveSlide(n) {
+            showSlide(currentSlide + n);
         }
 
-        // Iniciar o primeiro slide quando a página carrega
+        function setSlide(index) {
+            showSlide(index);
+        }
+
         document.addEventListener('DOMContentLoaded', () => {
-            showSlide(currentSlideplantas);
+            showSlide(currentSlide);
         });
-        // plantas fim
-
-
-        // Seleciona os elementos
-        var meusSlides = document.querySelectorAll('.slide-do-carousel');
-        var botoesCirculares = document.querySelectorAll('.circulo-botao');
-        var slideAtual = 0;
-
-        // Função para atualizar o slide
-        function atualizarSlide(indice) {
-            var meuCarousel = document.querySelector('.meu-carousel');
-            meuCarousel.style.transform = `translateX(-${indice * 100}%)`;
-
-            // Atualizar o círculo ativo
-            botoesCirculares.forEach(function(botao) {
-                botao.classList.remove('ativo');
-            });
-            botoesCirculares[indice].classList.add('ativo');
-        }
-
-        // Adiciona o evento de clique para cada círculo
-        botoesCirculares.forEach(function(botao, indice) {
-            botao.addEventListener('click', function() {
-                slideAtual = indice;
-                atualizarSlide(slideAtual);
-            });
-        });
-
-        // Inicializa o primeiro círculo como ativo
-        atualizarSlide(slideAtual);
     </script>
 
 

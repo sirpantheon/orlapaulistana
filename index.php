@@ -157,7 +157,7 @@
 	<!-- INÍCIO #legado -->
 	<section id="legado">
 		<!-- Carrossel ou outro conteúdo para Legado aqui -->
-		<?php get_template_part( 'template-parts/legado' ); ?>
+		<?php get_template_part('template-parts/legado'); ?>
 	</section>
 	<!-- FIM #legado -->
 
@@ -165,91 +165,91 @@
 	<section id="video-arquitetura">
 		<!-- Vídeo ou descrição de arquitetura aqui -->
 
-		<?php get_template_part( 'template-parts/video' ); ?>
+		<?php get_template_part('template-parts/video'); ?>
 	</section>
 	<!-- FIM #video-arquitetura -->
 
 	<!-- INÍCIO #implantacao -->
 	<section id="implantacao">
 		<!-- Detalhes da Implantação aqui -->
-		<?php get_template_part( 'template-parts/implantacao' ); ?>
+		<?php get_template_part('template-parts/implantacao'); ?>
 	</section>
 	<!-- FIM #implantacao -->
 
 	<!-- INÍCIO #perspectivas -->
 	<section id="perspectivas">
 		<!-- Perspectivas de Lançamento aqui -->
-		<?php get_template_part( 'template-parts/perspectivas' ); ?>
+		<?php get_template_part('template-parts/perspectivas'); ?>
 	</section>
 	<!-- FIM #perspectivas -->
 
 	<!-- INÍCIO #plantas -->
 	<section id="plantas">
 		<!-- Carrossel de plantas de 1 Dorm aqui -->
-		<?php get_template_part( 'template-parts/plantas' ); ?>
+		<?php get_template_part('template-parts/plantas'); ?>
 	</section>
 	<!-- FIM #plantas -->
-
-	<!-- INÍCIO #tour-virtual -->
-	<section id="tour-virtual">
-		<!-- Conteúdo do Tour Virtual aqui -->
-		<?php get_template_part( 'template-parts/tour-virtual' ); ?>
-	</section>
-	<!-- FIM #tour-virtual -->
 
 	<!-- INÍCIO #regiao-mapa -->
 	<section id="regiao-mapa">
 		<!-- Mapa da Região aqui -->
-		<?php get_template_part( 'template-parts/regiao-mapa' ); ?>
+		<?php get_template_part('template-parts/regiao-mapa'); ?>
 	</section>
 	<!-- FIM #regiao-mapa -->
 
-	<!-- INÍCIO #galeria-1900 -->
-	<section id="galeria-1900">
-		<!-- Galeria de imagens do lançamento às 19:00 aqui -->
-		<?php get_template_part( 'template-parts/galeria' ); ?>
+	<!-- INÍCIO #tour-virtual -->
+	<section id="tour-virtual">
+		<!-- Conteúdo do Tour Virtual aqui -->
+		<?php get_template_part('template-parts/tour-virtual'); ?>
 	</section>
-	<!-- FIM #galeria-1900 -->
+	<!-- FIM #tour-virtual -->
 
 	<!-- INÍCIO #arquitetura-carrossel -->
 	<section id="arquitetura-carrossel">
 		<!-- Carrossel de arquitetura aqui -->
-		<?php get_template_part( 'template-parts/carrossel' ); ?>
+		<?php get_template_part('template-parts/carrossel'); ?>
 	</section>
 	<!-- FIM #arquitetura-carrossel -->
+
+	<!-- INÍCIO #galeria-1900 -->
+	<section id="galeria-1900">
+		<!-- Galeria de imagens do lançamento às 19:00 aqui -->
+		<?php get_template_part('template-parts/galeria'); ?>
+	</section>
+	<!-- FIM #galeria-1900 -->
 
 	<!-- INÍCIO #video-revit5 -->
 	<section id="video-revit5">
 		<!-- Vídeo Revit 5 aqui -->
-		<?php get_template_part( 'template-parts/video-revit5' ); ?>
+		<?php get_template_part('template-parts/video-revit5'); ?>
 	</section>
 	<!-- FIM #video-revit5 -->
 
 	<!-- INÍCIO #diferenciais -->
 	<section id="diferenciais">
 		<!-- Diferenciais do projeto aqui -->
-		<?php get_template_part( 'template-parts/diferenciais' ); ?>
+		<?php get_template_part('template-parts/diferenciais'); ?>
 	</section>
 	<!-- FIM #diferenciais -->
 
 	<!-- INÍCIO #institucional-cgr -->
 	<section id="institucional-cgr">
 		<!-- Informações institucionais da CGR Consultoria aqui -->
-		<?php get_template_part( 'template-parts/institucional-cgr' ); ?>
+		<?php get_template_part('template-parts/institucional-cgr'); ?>
 	</section>
 	<!-- FIM #institucional-cgr -->
 
 	<!-- INÍCIO #contato-form-lp -->
 	<section id="contato-form-lp">
 		<!-- Formulário de contato e landing page aqui -->
-		<?php get_template_part( 'template-parts/contato-form-lp' ); ?>
+		<?php get_template_part('template-parts/contato-form-lp'); ?>
 	</section>
 	<!-- FIM #contato-form-lp -->
 
 	<!-- INÍCIO #footer -->
 	<footer id="footer">
 		<!-- Conteúdo do footer aqui -->
-		<?php get_template_part( 'template-parts/footer-part' ); ?>
+		<?php get_template_part('template-parts/footer-part'); ?>
 	</footer>
 	<!-- FIM #footer -->
 
