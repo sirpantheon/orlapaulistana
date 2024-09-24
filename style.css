@@ -892,9 +892,7 @@ diferenciais fim
 /*-------------------------
 implantacao inicio
 --------------------------*/
-#perspectivas {
-
-}
+#perspectivas {}
 
 /*-------------------------
 implantacao fim
@@ -1452,6 +1450,13 @@ CAROUSEL INICIO
 @media (max-width: 730px) {
     div#n2-ss-8 .n2-ss-slider-1 {
         height: 50vh;
+    }
+
+
+}
+@media (max-width: 800px){
+    .n2-ss-slider .n2-ss-layer-col {
+        width: 70vw !important;
     }
 }
 
