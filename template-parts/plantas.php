@@ -8,5 +8,5 @@
             <h2>Do horizonte infinito ao espaco privado.<br /><strong>Bem-vindo ao seu apartamento.</strong></h2>
         </div>
     </div>
-    <?php echo do_shortcode( '[smartslider3 slider="2"]' ) ?>
+    <?php echo do_shortcode( '[smartslider3 slider="4"]' ) ?>
 </article>

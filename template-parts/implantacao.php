@@ -3,30 +3,33 @@
         <img src="<?php echo esc_url(get_template_directory_uri() . '/images/implantacoes.png'); ?>">
     </div>
     <div class="implantacaolegenda">
-        <div>
-            
-            <ul class="primeiralegenda">
-                <li>implantacao</li>
-                <li>areas comuns</li>
-            </ul>
-    
-            <span>Um terreno de esquina:<br /><strong>valorizado e exclusivo</strong></span>
-            
-            <ul class="segundalegenda">
-                <li>tèrreo</li>
-                <li>loren ipsum</li>
-                <li>loren ipsum</li>
-            </ul>
-            <ol class="terceiralegenda">
-                <li>Entrada Residencial</li>
-                <li>Entrada Servico</li>
-                <li>Portaria </li>
-                <li>Hall Social</li>
-                <li>Delivery Room</li>
-                <li>Loja</li>
-                <li>Entrada Veìculos</li>
-            </ol>
+        <div class="container-legenda">
+
+            <div>
+                <ul class="primeiralegenda">
+                    <li>implantacao</li>
+                    <li>areas comuns</li>
+                </ul>
+
+                <span>Um terreno de esquina:<br /><strong>valorizado e exclusivo</strong></span>
+            </div>
+            <div>
+                <ul class="segundalegenda">
+                    <li>tèrreo</li>
+                    <li>loren ipsum</li>
+                    <li>loren ipsum</li>
+                </ul>
+                <ol class="terceiralegenda">
+                    <li>Entrada Residencial</li>
+                    <li>Entrada Servico</li>
+                    <li>Portaria </li>
+                    <li>Hall Social</li>
+                    <li>Delivery Room</li>
+                    <li>Loja</li>
+                    <li>Entrada Veìculos</li>
+                </ol>
+            </div>
         </div>
     </div>
-    
+
 </article>

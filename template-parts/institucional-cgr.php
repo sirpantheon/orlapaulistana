@@ -36,7 +36,7 @@
                 </div>
                 <div class="carousel-institucional ">
                     <?php
-                    echo do_shortcode('[smartslider3 slider="12"]');
+                    echo do_shortcode('[smartslider3 slider="7"]');
                     ?>
                 </div>
             </div>

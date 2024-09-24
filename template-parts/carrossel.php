@@ -3,7 +3,7 @@
         <img src="<?php echo esc_url(get_template_directory_uri() . '/images/background/fundo-meio2.png'); ?>">
     </div>
     <div>
-        <?php echo do_shortcode('[smartslider3 slider="8"]') ?>
+        <?php echo do_shortcode('[smartslider3 slider="2"]') ?>
     </div>
 
 </article>

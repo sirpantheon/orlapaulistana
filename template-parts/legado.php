@@ -1,7 +1,7 @@
 <article>
     <div class="containerlegado">
         <div class="itemtexto">
-            <h2 id="subtitulo">Legado
+            <h2 id="subtitulo dia">Legado
                 <br /> arquitetonico
             </h2>
             <h2>esculpindo em
@@ -17,7 +17,7 @@
                 <br /> Urbano e natural, em harmonia plena.
             </p>
         </div>
-        <div class="itemnomes">
+        <div class="itemnomes noite">
             <div>
                 <label>Arquitetura</label>
                 <p>Aflato/Gasperini</p>
@@ -38,7 +38,7 @@
 
         <div class="carousel-legado">
 
-            <?php echo do_shortcode('[smartslider3 slider="6"]') ?>
+            <?php echo do_shortcode('[smartslider3 slider="8"]') ?>
         </div>
 
     </div>
