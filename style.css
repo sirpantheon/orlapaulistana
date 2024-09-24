@@ -632,7 +632,10 @@ legado comeco
 
     .imglegado {
         width: 100%;
+    }
 
+    .carousel-legado {
+        display: none !important;
     }
 }
 
@@ -737,7 +740,7 @@ implantacao inicio
     cursor: pointer;
     color: #CCC7C2;
     display: flex;
-    font-size: 22px;
+    font-size: 1.3em;
     justify-content: center;
     align-items: center;
     width: 12rem;
@@ -814,6 +817,10 @@ implantacao inicio
         letter-spacing: .3em;
         font-size: .8em;
     }
+
+    .implantacaolegenda .primeiralegenda li {
+        font-size: 1em;
+    }
 }
 
 /*-------------------------
@@ -821,12 +828,72 @@ implantacao fim
 --------------------------*/
 
 /*-------------------------
+diferenciais inicio
+--------------------------*/
+#diferenciais {
+    height: 100vh;
+}
+
+#diferenciais article {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.diferenciais-container {
+    width: 80%;
+    text-align: center;
+}
+
+.titulo-diferencial {
+    height: 20vh;
+}
+
+.titulo-diferencial h1 span {
+    color: #cbc6c2;
+}
+
+.listas-diferenciais {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 80vh;
+}
+
+.lista-diferencial {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lista-diferencial h3 {
+    border: #000000 solid 1px;
+    width: 25vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    .lista-diferencial {
+        width: 100%;
+    }
+
+}
+
+/*-------------------------
+diferenciais fim
+--------------------------*/
+
+/*-------------------------
 implantacao inicio
 --------------------------*/
 #perspectivas {
-    width: 100vw;
-    background-color: #CCC7C2;
-    height: 100vh;
+
 }
 
 /*-------------------------
@@ -940,6 +1007,20 @@ plantas inicio
     background-color: rgba(0, 0, 0, 0.8);
 }
 
+@media (max-width: 700px) {
+    .containerplantas ul {
+        width: 80%;
+    }
+
+    .containerplantas h2 {
+        font-size: 1em;
+    }
+
+    #plantas {
+        height: 55vh;
+    }
+}
+
 /*-------------------------
 plantas fim
 --------------------------*/
@@ -948,31 +1029,94 @@ plantas fim
 /*-------------------------
 mapa inicio
 --------------------------*/
-#regiao-mapa article {
+#regiao-mapa {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.containermapa {
-    display: flex;
+.mapa-info {
     width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.mapa-info h1 strong {
+    color: #cbc6c2;
+
+}
+
+.endereco {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-mapa {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mapa-lista ol {
+    text-align: left;
+}
+
+.mapa-lista ol li strong {
+    font-size: .8em;
+    font-weight: 100;
+    line-height: .2em;
+}
+
+#regiao-mapa article {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+}
+
+.mapa {
+    display: flex;
+    width: 100%;
     justify-content: center;
 }
 
-.mapouter {
-    position: relative;
-    text-align: right;
-    height: 700px;
-    width: 1200px;
-    display: flex;
+.mapa img {
+    object-fit: contain;
+    width: 80vw;
+    height: 80vh;
 }
 
-.gmap_canvas {
-    overflow: hidden;
-    background: none !important;
-    height: 700px;
-    width: 1200px;
+.mapa p {
+    text-align: center;
+    width: 80vw;
+    height: 20vhvh;
 }
+
+.mapa-texto {
+    display: flex;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.mapa-texto p {
+    width: 80%;
+    font-size: 1.2em;
+}
+
+@media (max-width: 700px) {
+    .mapa-texto p {
+        font-size: .7em;
+    }
+}
+
+
+
 
 /*-------------------------
 plantas fim
@@ -1077,7 +1221,7 @@ tour-virtual inicio
 
 .btn-tour {
     border: none;
-    font-size: 18px;
+    font-size: 1.3em;
     font-weight: 600;
     background-color: transparent;
     letter-spacing: 5px;
@@ -1190,13 +1334,57 @@ tour-virtual inicio
     object-fit: fill;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 700px) {
+    #tour-virtual {
+        height: 100vh;
+    }
+
     .tour-virtual-topo div {
         width: 80%;
     }
 
     .tour-virtual-topo h2 {
-        font-size: 1.5em;
+        font-size: 1.2em;
+    }
+
+    .img-fundo1 {
+        height: 80vh;
+    }
+
+    .img-fundo1 img {
+        height: 100%;
+    }
+
+    .tour-virtual-topo {
+        margin: 0;
+        height: 20vh;
+    }
+
+    .carousel-container-div {
+        max-width: 100% !important;
+    }
+
+    #tour-virtual article .container-div {
+        height: 45vh;
+    }
+
+    .btn-tour {
+        font-size: .8em;
+    }
+
+    .carousel {}
+
+    .dot {
+        width: 15vw;
+        font-size: .7em;
+        height: 3vh;
+    }
+
+    .carousel-indicators {
+        width: 100%;
+        margin: 0 !important;
+        gap: 3em;
+
     }
 }
 
@@ -1210,7 +1398,7 @@ tour-virtual FIM
 CAROUSEL INICIO
 --------------------------*/
 #arquitetura-carrossel {
-    height: 80vh;
+    height: 100vh;
 
 }
 
@@ -1258,7 +1446,13 @@ CAROUSEL INICIO
 
 .img-fundo2 img {
     width: 100vw;
-    height: 100vh;
+    height: 120vh;
+}
+
+@media (max-width: 730px) {
+    div#n2-ss-8 .n2-ss-slider-1 {
+        height: 50vh;
+    }
 }
 
 /*-------------------------
@@ -1371,13 +1565,15 @@ contato INICIO
 
 .contato-rigth .whatsapp span,
 .contato-rigth .agende span {
-    font-size: 16px;
+    font-size: .7em;
     font-weight: 700;
+    margin-left: 1em;
 }
 
 @media (max-width: 730px) {
     .contato-left h2 {
-        font-size: 1em;
+        font-size: 2em;
+        text-align: center;
     }
 
     .contato-container {
@@ -1387,8 +1583,12 @@ contato INICIO
     .contato-left,
     .contato-rigth {
         width: 100%;
+        height: 30vh;
+        text-align: center;
     }
-    .contato-rigth .whatsapp,.contato-rigth .agende{
+
+    .contato-rigth .whatsapp,
+    .contato-rigth .agende {
         width: 100%;
     }
 }

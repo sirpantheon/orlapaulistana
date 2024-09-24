@@ -179,7 +179,7 @@
 	<!-- INÍCIO #perspectivas -->
 	<section id="perspectivas">
 		<!-- Perspectivas de Lançamento aqui -->
-		<?php get_template_part('template-parts/perspectivas'); ?>
+		
 	</section>
 	<!-- FIM #perspectivas -->
 

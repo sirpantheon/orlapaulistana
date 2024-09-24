@@ -36,7 +36,10 @@
             </div>
         </div>
 
-        <?php echo do_shortcode( '[smartslider3 slider="6"]' ) ?>
+        <div class="carousel-legado">
+
+            <?php echo do_shortcode('[smartslider3 slider="6"]') ?>
+        </div>
 
     </div>
 
