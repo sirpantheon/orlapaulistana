@@ -1,41 +1,66 @@
     <?php wp_footer(); ?>
+    <section class="conteudo-footer container-fluid d-flex">
+        <div class="container d-flex">
+
+            <div class="container-menu col-4">
+
+                <ul class="d-flex menu-footer ">
+                    <li>
+                        <span>Our History</span>
+                    </li>
+                    <li>
+                        <span>Contact Us</span>
+                    </li>
+                    <li>
+                        <span>Media</span>
+                    </li>
+                    <li>
+                        <span>FAQ</span>
+                    </li>
+                </ul>
+
+                <div class="d-flex termos-footer">
+                    <span>Privacy Policy<br> Terms and Conditions<br> Accessibillity</span>
+                    <i class="fa-brands fa-facebook item-social"></i>
+                    <i class="fa-brands fa-instagram item-social"></i>
+                    <i class="fa-brands fa-tiktok item-social"></i>
+                </div>
+            </div>
+
+            <div class="logo-footer col-4">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/LogoFooter.png" class=" img-fluid " alt="logo menu" />
+            </div>
+            <div class="direitos-footer col-4 "><span>@2024 Music City San Francisco</span></div>
+        </div>
+    </section>
+
+
+
+
+
+
+
     <script>
-        let currentSlide = 0;
+        // Adicionar animação de exibição e ocultação no dropdown
+        var dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-toggle'));
+        dropdownElementList.map(function(dropdownToggleEl) {
+            dropdownToggleEl.addEventListener('click', function() {
+                var dropdownMenu = dropdownToggleEl.nextElementSibling;
 
-        function showSlide(index) {
-            const slides = document.querySelectorAll('.carousel-item');
-            const dots = document.querySelectorAll('.dot');
-
-            if (index >= slides.length) {
-                currentSlide = 0;
-            } else if (index < 0) {
-                currentSlide = slides.length - 1;
-            } else {
-                currentSlide = index;
-            }
-
-            slides.forEach((slide, i) => {
-                slide.style.display = (i === currentSlide) ? 'block' : 'none';
+                if (dropdownMenu.classList.contains('show')) {
+                    dropdownMenu.classList.remove('show');
+                    setTimeout(function() {
+                        dropdownMenu.style.display = 'none';
+                    }, 300); // Corresponde ao tempo da animação CSS
+                } else {
+                    dropdownMenu.style.display = 'block';
+                    setTimeout(function() {
+                        dropdownMenu.classList.add('show');
+                    }, 1); // Pequeno atraso para ativar a animação após exibir
+                }
             });
-
-            dots.forEach((dot, i) => {
-                dot.className = (i === currentSlide) ? 'dot active' : 'dot';
-            });
-        }
-
-        function moveSlide(n) {
-            showSlide(currentSlide + n);
-        }
-
-        function setSlide(index) {
-            showSlide(index);
-        }
-
-        document.addEventListener('DOMContentLoaded', () => {
-            showSlide(currentSlide);
         });
     </script>
-
 
     </body>
 
